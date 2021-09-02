@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="421.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AgentsTabController">
+   <bottom>
+      <ButtonBar buttonMinWidth="85.0" prefHeight="69.0" prefWidth="560.0" BorderPane.alignment="CENTER">
+         <buttons>
+            <Button fx:id="btnEditAgent" disable="true" mnemonicParsing="false" prefHeight="36.0" prefWidth="86.0" text="Edit">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAddAgent" layoutX="348.0" layoutY="10.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="86.0" text="Add">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSaveAgent" disable="true" layoutX="634.0" layoutY="17.0" mnemonicParsing="false" text="Save">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDeleteAgent" disable="true" layoutX="444.0" layoutY="10.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="86.0" text="Delete">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </buttons>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </ButtonBar>
+   </bottom>
+   <center>
+      <ListView fx:id="lvAgentInfo" prefHeight="283.0" prefWidth="153.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <HBox prefHeight="283.0" prefWidth="382.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="labelVbox" prefHeight="363.0" prefWidth="117.0" visible="false">
+               <children>
+                  <Label fx:id="label1" text="Agent ID:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="label2" layoutX="10.0" layoutY="10.0" text="First Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="label3" layoutX="10.0" layoutY="28.0" text="Middle Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="label4" layoutX="10.0" layoutY="45.0" text="Last Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="label5" layoutX="10.0" layoutY="63.0" text="Phone:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="label6" layoutX="10.0" layoutY="80.0" text="Email:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="label7" layoutX="10.0" layoutY="98.0" text="Position:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="label8" layoutX="10.0" layoutY="116.0" text="Agency ID:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox fx:id="tfVbox" prefHeight="283.0" prefWidth="257.0" visible="false">
+               <children>
+                  <TextField fx:id="tfAgentAgentid" editable="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfAgentFname" editable="false" layoutX="10.0" layoutY="10.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfAgentMname" editable="false" layoutX="10.0" layoutY="36.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfAgentLname" editable="false" layoutX="10.0" layoutY="61.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfAgentPhone" editable="false" layoutX="10.0" layoutY="87.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfAgentEmail" editable="false" layoutX="10.0" layoutY="112.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfAgentPos" editable="false" layoutX="10.0" layoutY="138.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfAgentAgencyid" editable="false" layoutX="10.0" layoutY="164.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </right>
+   <top>
+      <HBox prefHeight="38.0" prefWidth="586.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelMessage" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="586.0" textFill="#f50202" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children></HBox>
+   </top>
+   <left>
+      <HBox prefHeight="363.0" prefWidth="14.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

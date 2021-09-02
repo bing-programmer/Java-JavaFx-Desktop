@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BookingsTabController">
+   <children>
+      <TableView id="tableview" fx:id="tableView" layoutX="34.0" layoutY="14.0" prefHeight="200.0" prefWidth="635.0">
+         <columns>
+            <TableColumn id="BkId" fx:id="colBkId" prefWidth="75.0" text="BookingId" />
+            <TableColumn id="BkDate" fx:id="colBkDate" prefWidth="111.0" text="Booking Date" />
+            <TableColumn id="BkNum" fx:id="colBkNo" prefWidth="111.0" text="Booking Number" />
+            <TableColumn id="TravelerCount" fx:id="colCount" minWidth="3.0" prefWidth="78.0" text="Traveler Count" />
+            <TableColumn id="CustId" fx:id="CustId" minWidth="80.0" prefWidth="0.0" text="CustomerId" />
+            <TableColumn id="TripTypeId" fx:id="colType" prefWidth="75.0" text="Trip Type Id" />
+            <TableColumn id="PkgId" fx:id="colPkId" prefWidth="75.0" text="Package Id" />
+         </columns>
+      </TableView>
+      <Button id="btnEdit" fx:id="btnEditBooking" layoutX="376.0" layoutY="379.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="57.0" text="Edit" />
+      <Button id="btnSave" fx:id="btnSaveBooking" layoutX="455.0" layoutY="379.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="56.0" text="Save" />
+      <Label layoutX="74.0" layoutY="421.0" text="PackageId:" />
+      <TextField fx:id="txtbxType" disable="true" editable="false" layoutX="147.0" layoutY="388.0" />
+      <Label layoutX="67.0" layoutY="389.0" text="Trip Type Id:" />
+      <Label layoutX="66.0" layoutY="358.0" text="Customer Id:" />
+      <TextField fx:id="txtbxCustId" disable="true" editable="false" layoutX="147.0" layoutY="358.0" />
+      <Label layoutX="55.0" layoutY="327.0" text="Traveler Count:" />
+      <TextField fx:id="txtbxCount" disable="true" editable="false" layoutX="147.0" layoutY="326.0" />
+      <Label layoutX="41.0" layoutY="299.0" text="Booking Number:" />
+      <TextField fx:id="txtbxBkNo" disable="true" editable="false" layoutX="147.0" layoutY="295.0" />
+      <Label layoutX="61.0" layoutY="267.0" text="Booking Date: " />
+      <Label layoutX="78.0" layoutY="236.0" text="BookingId:" />
+      <TextField fx:id="txtbxBookingId" disable="true" editable="false" layoutX="147.0" layoutY="228.0" />
+      <TextField fx:id="txtbxPkgId" disable="true" editable="false" layoutX="147.0" layoutY="419.0" />
+      <DatePicker fx:id="DatePickerBookings" disable="true" layoutX="146.0" layoutY="263.0" />
+   </children>
+</AnchorPane>
